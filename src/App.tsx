@@ -54,7 +54,7 @@ function App() {
   };
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050711] text-white">
+    <main className="min-h-screen overflow-hidden bg-[#070806] text-white">
       <div className="fixed inset-0 -z-10 bg-grid" />
       <div className="fixed inset-0 -z-10 bg-glow" />
 

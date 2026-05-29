@@ -18,7 +18,7 @@ export function Filters({
     <div className="glass-panel">
       <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-center">
         <label className="relative">
-          <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-500" />
+          <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-zinc-500" />
           <input
             value={search}
             onChange={(event) => onSearchChange(event.target.value)}

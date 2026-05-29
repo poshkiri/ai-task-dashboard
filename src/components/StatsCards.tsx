@@ -18,10 +18,10 @@ export function StatsCards({ stats }: { stats: TaskStats }) {
         return (
           <motion.article key={item.label} variants={fadeUp} className="stat-card">
             <div>
-              <p className="text-sm text-slate-400">{item.label}</p>
+              <p className="text-sm text-zinc-400">{item.label}</p>
               <p className="mt-2 text-3xl font-semibold">{item.value}</p>
             </div>
-            <div className="rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-3 text-cyan-100">
+            <div className="rounded-2xl border border-lime-300/20 bg-lime-300/10 p-3 text-lime-100">
               <Icon className="h-6 w-6" />
             </div>
           </motion.article>

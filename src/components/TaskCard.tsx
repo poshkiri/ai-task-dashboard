@@ -5,8 +5,8 @@ import type { Priority, Task } from '../types';
 
 const priorityClass: Record<Priority, string> = {
   Low: 'border-emerald-300/25 bg-emerald-300/10 text-emerald-100',
-  Medium: 'border-cyan-300/25 bg-cyan-300/10 text-cyan-100',
-  High: 'border-violet-300/30 bg-violet-400/15 text-violet-100',
+  Medium: 'border-lime-300/25 bg-lime-300/10 text-lime-100',
+  High: 'border-amber-300/30 bg-amber-400/15 text-amber-100',
 };
 
 export function TaskCard({
@@ -25,7 +25,7 @@ export function TaskCard({
       <div className="mb-5 flex items-start justify-between gap-4">
         <div>
           <h3 className="text-xl font-semibold">{task.title}</h3>
-          <p className="mt-3 leading-7 text-slate-300">{task.description}</p>
+          <p className="mt-3 leading-7 text-zinc-300">{task.description}</p>
         </div>
         <button type="button" onClick={() => onDelete(task.id)} className="icon-button" aria-label="Удалить задачу">
           <Trash2 className="h-5 w-5" />
@@ -33,7 +33,7 @@ export function TaskCard({
       </div>
 
       <div className="mb-5 flex flex-wrap gap-2">
-        <span className="rounded-full border border-white/10 bg-white/[0.055] px-3 py-2 text-xs font-medium text-slate-200">
+        <span className="rounded-full border border-white/10 bg-white/[0.055] px-3 py-2 text-xs font-medium text-zinc-200">
           {task.status}
         </span>
         <span className={`rounded-full border px-3 py-2 text-xs font-medium ${priorityClass[task.priority]}`}>

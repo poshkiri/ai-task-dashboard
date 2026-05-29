@@ -25,13 +25,13 @@ export function TaskForm({
       }}
     >
       <div className="mb-6">
-        <p className="text-sm font-medium text-cyan-200">Create task</p>
+        <p className="text-sm font-medium text-lime-200">Create task</p>
         <h2 className="mt-2 text-2xl font-semibold sm:text-3xl">Добавить задачу</h2>
       </div>
 
       <label className="field-group">
         <span className="field-label">
-          <TextCursorInput className="h-4 w-4 text-cyan-200" />
+          <TextCursorInput className="h-4 w-4 text-lime-200" />
           Название задачи
         </span>
         <input
